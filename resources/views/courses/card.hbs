@@ -1,0 +1,21 @@
+<div class="album py-5 bg-light">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+      {{#each courses}}
+      <div class="card col" style="width: 18rem;">
+        <a href="/course/{{slug}}">
+          <img src="https://files.fullstack.edu.vn/f8-prod/courses/{{this.image}}" class="card-img-top" alt="anh ban be">
+        </a>
+        <div class="card-body">
+          <a href="/course/{{slug}}">
+            <h5 class="card-title">{{this.name}}</h5>
+          </a>
+          <p class="card-text">{{this.description}}</p>
+          <a href="#" class="btn btn-primary">Mua hàng</a>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</div>
